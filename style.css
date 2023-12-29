@@ -1,0 +1,333 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.main_container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.order_section {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.order_leftSectio {
+  width: 60%;
+  background-color: #fff;
+  padding: 30px;
+}
+
+@media (max-width: 800px) {
+  .order_leftSectio {
+    width: 100%;
+  }
+}
+
+.order_leftSectio .title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.order_leftSectio .course_details {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.order_leftSectio .course_details img {
+  width: 90px;
+  object-fit: contain;
+}
+
+.order_leftSectio .course_details .descprition {
+  height: 100%;
+}
+
+.order_leftSectio .course_details .descprition .name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.order_leftSectio .course_details .course_descprition {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.order_leftSectio .course_details .course_descprition .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order_leftSectio .course_details .course_descprition .item img {
+  width: 15px;
+  margin: 0;
+}
+
+.order_leftSectio .course_details .course_descprition .item p {
+  font-size: 0.6rem;
+  margin: 0 10px;
+}
+
+.order_leftSectio .payment_details {
+  width: 100%;
+  height: 150px;
+}
+
+.order_leftSectio .payment_details .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.offer {
+  width: 80%;
+  height: 40px;
+  background-color: #cc00ff;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  transition: height 0.5s ease, opacity 0.5s ease, overflow 0.5s ease;
+}
+
+#offer span {
+  display: none;
+  cursor: pointer;
+}
+
+#offer:hover span {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .offer {
+    width: 100%;
+    height: 40x;
+    padding: 0 5px;
+  }
+}
+
+.order_leftSectio .payment_bill .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.order_leftSectio .payment_bill .bill_section {
+  width: 100%;
+  position: relative;
+}
+
+.order_leftSectio .payment_bill .bill_section p {
+  font-size: 0.7rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .order_leftSectio .payment_bill .bill_section p {
+    font-size: 0.6rem;
+    margin-top: 8px;
+  }
+}
+
+.order_leftSectio .payment_bill .bill_section::before {
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    bottom: 40px;
+  }
+  
+
+
+.order_leftSectio .payment_bill .bill_section .bill_item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.order_leftSectio .payment_bill .bill_section .bill_item #Total {
+  font-weight: 600;
+}
+
+.order_leftSectio .payment_bill .bill_section .bill_item .bill_item_name {
+  width: 60%;
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.order_leftSectio
+  .payment_bill
+  .bill_section
+  .bill_item
+  .bill_item_name
+  #offer1 {
+  position: absolute;
+  right: 20%;
+  background-color: #f2ed70;
+}
+
+@media (max-width: 800px) {
+  .order_leftSectio
+    .payment_bill
+    .bill_section
+    .bill_item
+    .bill_item_name
+    #offer1 {
+    position: static;
+    right: auto;
+    background-color: #f2ed70;
+  }
+}
+
+.order_leftSectio .payment_bill .bill_section .bill_item .bill_item_price {
+  width: 40%;
+}
+
+.order_leftSectio .button {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.order_leftSectio .button #submit {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  background-color: #111563;
+  border: none;
+  outline: none;
+  margin: 5px auto;
+  cursor: pointer;
+}
+
+.order_leftSectio .button #submit:hover {
+  background-color: #0a0d42;
+}
+
+.select {
+  position: relative;
+  margin-bottom: 15px;
+  width: 60%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.select .selectBtn {
+  padding: 10px;
+  border-radius: 3px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  background: #fff;
+}
+
+.select .selectBtn:after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  width: 6px;
+  height: 6px;
+  transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  transition: 0.2s ease;
+}
+
+.select .selectBtn.toggle {
+  border-radius: 3px 3px 0 0;
+}
+
+.select .selectBtn.toggle:after {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.select .selectDropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+  background: #fff;
+  border-top: 1px solid #eee;
+  z-index: 1;
+  transform: scale(1, 0);
+  transform-origin: top center;
+  visibility: hidden;
+  transition: 0.2s ease;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.select .selectDropdown .option {
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.select .selectDropdown .option:hover {
+  background: #f8f8f8;
+}
+
+.select .selectDropdown.toggle {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+.right-section {
+    flex: 1;
+    text-align: center;
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+.right-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+
+
+.descprition {
+  padding: 10px;
+  margin: 20px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.course_descprition {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.item {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
